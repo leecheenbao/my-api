@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8080
 
 # 定義 Docker 容器啟動時執行的命令
-CMD [ "node", "index.js" ]
+CMD [ "node", "app.js" ]
