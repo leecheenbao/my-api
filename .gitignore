@@ -160,4 +160,8 @@ dist
 .history
 .ionide
 
+
+/node_modules
+serviceAccountKey.json
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,node
