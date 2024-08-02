@@ -1,32 +1,10 @@
 # my-api
-first nodejs project
 
-### 1. Setup
-```bash
-npm install
-```
----
-
-### 2. Development Server
-```bash
-npm run start
-```
----
-
-### Generate API Documentation
-```bash
-apidoc -i routes_api -o docs
-```
-
-### Build Image and Push to GCP Artifact Registry
-```bash
-sh build.sh
-```
-
-### create .env
+### 1. Create .env
 ```bash
 touch .env
 ```
+
 ```bash
 # API-SERVER
 MAIN_NODE_PORT=8080
@@ -43,3 +21,26 @@ DB_DIALECT=DB_DIALECT=mysql
 JWT_SECRET=<your-secret-key>
 JWT_EXPIRES=1h
 ```
+
+### 2. Setup
+```bash
+npm install
+```
+
+
+### 3. Development Server
+```bash
+npm run start
+```
+---
+
+### Generate API Documentation
+```bash
+apidoc -i routes_api -o docs
+```
+
+### Build Image and Push to GCP Artifact Registry
+```bash
+sh build.sh
+```
+
