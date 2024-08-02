@@ -19,10 +19,14 @@ app.use((req, res, next) => {
 const admin_api = require('./routes_api/01-01_admin');
 const routes_api = require('./routes_api/02-01_review');
 const form_api = require('./routes_api/02-02_form');
+const category_api = require('./routes_api/03-01_categories');
+const product_api = require('./routes_api/03-02_products');
 
 app.use('/api/v1/review', routes_api);
 app.use('/api/v1/admin', admin_api);
 app.use('/api/v1/form', form_api);
+app.use('/api/v1/category', category_api);
+app.use('/api/v1/product', product_api);
 
 // 啟動伺服器
 app.listen(port, () => {

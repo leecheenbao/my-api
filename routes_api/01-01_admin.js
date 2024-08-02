@@ -40,7 +40,6 @@ router.post('/register', async (req, res) => {
         // 加密密碼
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        console.log(now);
         // 創建新用戶
         const newUser = await User.create({
             username,
