@@ -1,11 +1,12 @@
 # my-api
 first nodejs project
 
-
+### Setup
 ```bash
 npm install
 ```
 
+### Development Server
 ```bash
 npm run start
 ```
