@@ -1,22 +1,45 @@
 # my-api
 first nodejs project
 
-### Setup
+### 1. Setup
 ```bash
 npm install
 ```
+---
 
-### Development Server
+### 2. Development Server
 ```bash
 npm run start
 ```
+---
 
-### 產生API文檔
+### Generate API Documentation
 ```bash
 apidoc -i routes_api -o docs
 ```
 
-### 建構映像檔並推送至GCP Artifact Registry
+### Build Image and Push to GCP Artifact Registry
 ```bash
 sh build.sh
+```
+
+### create .env
+```bash
+touch .env
+```
+```bash
+# API-SERVER
+MAIN_NODE_PORT=8080
+
+# DB-local
+DB_HOST=<your database host>
+DB_PORT=<your database port>
+DB_USER=<your database user>
+DB_PASS=<your database password>
+DB_NAME=my_api
+DB_DIALECT=DB_DIALECT=mysql
+
+# JWT settings
+JWT_SECRET=<your-secret-key>
+JWT_EXPIRES=1h
 ```
