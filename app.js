@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
@@ -7,6 +8,7 @@ const port = process.env.MAIN_NODE_PORT;
 
 // 中介軟體
 app.use(bodyParser.json());
+app.use(cors());
 
 // 請求記錄中介軟體
 app.use((req, res, next) => {
